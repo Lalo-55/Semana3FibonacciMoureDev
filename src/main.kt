@@ -16,6 +16,17 @@
  * - Subiré una posible solución al ejercicio el lunes siguiente al de su publicación.
  *
  */
-fun main (){
-    println("Reto 3 Semana 3")
+
+fun main() {
+    var numeroInicial: Long = 0
+    var numeroSecundario: Long= 1
+    var suma: Long = 0
+    for (i in 0..50) {
+        println("Fibonacci : $suma")
+        suma = numeroInicial + numeroSecundario
+        numeroInicial = numeroSecundario
+        numeroSecundario = suma
+    }
 }
+
+
